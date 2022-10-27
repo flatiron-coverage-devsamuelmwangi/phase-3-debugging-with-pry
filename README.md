@@ -56,9 +56,17 @@ a REPL that exists right in the middle of your program, wherever you added the
 Let's take a look. In this repository, you'll see a file called
 `pry_is_awesome.rb`.
 
-## Using `binding.pry`
+<div class="readme-content-test--show-when-active">
+    
+1. Ensure that you're in the project "root" directory by issuing `cd` . 
+    
+2. Verify that 'pry' is installed: `gem list pry`: you should see something like `pry (0.11.3)`. The LearnIDE already has PRY installed.  
 
-First, let's make sure Pry is installed on your system:
+</div>
+    
+<div class="readme-content-test--hide-when-active">
+    
+1. Fork and clone this repository.   
 
 ```console
 $ gem install pry
@@ -144,13 +152,7 @@ program will continue to execute.
 
 ## Using Pry to Debug
 
-In addition to _exploring_ code inside Pry, you can also manipulate variables
-and try code out. This is where Pry really becomes helpful for debugging. If you
-have a method that isn't doing what it's supposed to do, instead of making
-changes in your text editor and running the tests over and over until you get it
-working, you can put a binding in your code and try things out. Once you've
-figured out how to fix the problem, you then update the code in your text editor
-accordingly.
+In that file, we have a broken method. Run `learn` to see the failing test. 
 
 Let's walk through an example together. In this repository, you'll see a `spec`
 folder containing a file `pry_debugging_spec.rb`. This is a test for the file
